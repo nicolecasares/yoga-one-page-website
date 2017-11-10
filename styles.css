@@ -1,0 +1,302 @@
+*{
+	box-sizing: border-box;
+	/*overflow: scroll;*/
+}
+
+h1{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+p{
+	font-family: 'Lato', sans-serif;
+}
+
+header{
+	background: #602168;
+	width: 100%;
+	height: 74px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+
+}
+
+header: :after{
+	clear: both;
+}
+header ul{
+	text-decoration: none;
+}
+
+.desktop-nav {
+	display: none;
+}
+
+.menu-toggle{
+	position: absolute;
+	top: 58px;
+	min-width: 100%;
+
+}
+
+.menu-toggle .hamburger{
+	/*background: url('hamburger-icon.png');*/
+	/*float: right;*/
+	position:absolute;
+	right: 12px;
+    top: -37px;
+}
+
+.menu-toggle ul{
+	min-width: 100%;
+	position: absolute;
+	top: 0;
+	background: pink;
+	padding: 10px;
+	list-style-type: none;
+}
+
+.menu-toggle ul li{
+	margin: 10px;
+}
+
+a{
+		color: black;
+		text-decoration: none;
+		font-weight: bold;
+	}
+
+
+@media only screen and (min-width: 573px){
+
+	.desktop-nav{
+		display: inline-block;
+		min-width: 100;
+		float: right; 	
+		padding: 20px;
+
+
+	}
+	.desktop-nav ul{
+		
+	}
+	.desktop-nav ul li{
+		display: inline-block;
+		float: left;
+		padding: 10px;
+		
+
+}
+
+
+	.desktop-nav a{
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+
+
+	}
+
+	.desktop-nav a:hover{
+		text-decoration: underline;
+		color: white;
+
+	}
+	.menu-toggle{
+		display: none;
+	}
+}
+
+#logo{
+	padding: 10px;
+	float: left;
+	color: white;
+
+	
+}
+#logo i{
+	color: white;
+
+}
+
+
+.welcome{
+	margin-top: 20px;
+/*	position: relative;
+	top: 56px;*/
+	background: url("images/yoga-landscape.jpg") no-repeat center ;
+	background-size: cover;
+	min-height: 100%;
+	height: 500px;
+	color: black;
+	margin-top: 60px;
+
+}
+
+.welcome-message{
+	float: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 342px;
+	margin: 10%;
+	background: rgba(255, 255, 255, 0.77);
+	text-align: center;
+
+}
+
+@media only screen and (min-width: 573px){
+	.welcome-message{
+		width: 545px;
+	}
+}
+
+.welcome h1{
+	padding: 20px;
+	font-size: 400%;
+	padding-bottom: 0;
+
+}
+
+.welcome p{
+	/*padding-left: 100px;*/
+	padding: 20px;
+	font-size: 24px;
+	padding-top: none;
+
+}
+
+
+.about{
+	text-align: center;
+	background: #a69aca;
+	padding: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.flex-item{
+	flex: 1;
+}
+
+.about img{
+	border-radius: 160px;
+}
+
+.about p{
+	background: white;
+	padding: 20px 31px;
+	box-shadow: 4px 5px 5px rgba(20, 20, 20, 0.82);
+
+}
+
+
+
+/*.yoga-classes{
+	width: 300px;
+}*/
+.title{
+	min-width: 100%;
+	background: pink;
+	text-align: center;
+	margin: 0;
+	padding: 2%;
+}
+
+.title h2{
+	margin: 0;
+	color: black;
+}
+
+.yoga-classes{
+	display: flex;
+	/*justify-content: space-around;*/
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+
+
+
+.yoga-class{
+	box-shadow: 4px 5px 5px #888888;
+	margin: 30px;
+	width: 200px;
+
+}
+
+.yoga-class p{
+	padding: 10px;
+}
+
+/*.yoga-classes img {
+    max-width: 100%;
+    height: auto;
+}*/
+
+
+.item{
+	flex: 1;
+}
+
+.prices{
+	text-align: center;
+	color: black;
+}
+
+.prices li{
+	color: black;
+	display: inline;
+}
+
+.member{
+	/*background: #9c2d6c;*/
+	background: #d40e7e;
+	padding: 30px;
+	height: 300px;
+}
+
+.nonmember{
+	background: #bad629;
+	padding: 30px;
+	height: 300px;
+}
+
+#contact{
+/*	background: #c6b8f1;*/
+	height: 300px;
+	text-align: center;
+	padding: 30px;
+
+}
+
+
+footer{
+	background: #602168;
+	height: 105px;
+	padding: 20px;
+	color: white;
+}
+
+footer i {
+	color: white;
+	margin: 5px;
+	margin-top: 0;
+	margin-right: 0;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
